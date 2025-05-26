@@ -1,0 +1,25 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "A Drone’s Special",
+      "price": 87,
+      "category": "burger",
+      "image": "/images/burger1.png"
+    },
+    {
+      "id": 2,
+      "name": "Umami Dreams Poké",
+      "price": 75,
+      "category": "poke",
+      "image": "/images/poke1.png"
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Milkshake",
+      "price": 74,
+      "category": "drink",
+      "image": "/images/milkshake1.png"
+    }
+  ]
+}
