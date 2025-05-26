@@ -1,3 +1,15 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 export default function Home() {
-  return <h1>Welcome to Drone Delights</h1>;
+  return (
+    <>
+      <Header />
+      <main>
+        <h1>Popular Items</h1>
+        {/* Här kommer meny-sektionen senare */}
+      </main>
+      <Footer />
+    </>
+  );
 }
