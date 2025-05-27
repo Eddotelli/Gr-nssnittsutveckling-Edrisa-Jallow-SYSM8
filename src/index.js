@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import { CartProvider } from './context/CartContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { AuthProvider } from "./context/AuthContext"; // Ändra här!
+import { CartProvider } from "./context/CartContext";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <CartProvider>
-    <App />
-  </CartProvider>
+  <AuthProvider> {/* Ändra här! */}
+    <CartProvider>
+      <App />
+    </CartProvider>
+  </AuthProvider>
 );
