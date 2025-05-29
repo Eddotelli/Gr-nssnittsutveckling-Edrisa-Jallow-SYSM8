@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #467066;
+  color: #fcefd8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 12px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cart-icon {
+  height: 28px;
+  cursor: pointer;
+}
+
+.nav-link,
+.signin-btn,
+.logout-btn {
+  font-family: "IBM Plex Mono", monospace;
+  background: none;
+  border: none;
+  color: #fcefd8;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.logout-btn:hover,
+.signin-btn:hover,
+.nav-link:hover {
+  background-color: #2e5b51;
+}

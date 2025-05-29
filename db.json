@@ -1,56 +1,320 @@
 {
   "menu": [
     {
-      "id": "1",
-      "name": "A Drone’s Special",
+      "id": 1,
+      "title": "C-Town’s Finest Bacon BBQ Stack",
+      "price": 95,
+      "category": "Burgers",
+      "popular": true,
+      "image": "burger.png",
+      "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce."
+    },
+    {
+      "id": 2,
+      "title": "A Drone’s Special",
       "price": 87,
-      "category": "burger",
-      "image": "/images/burger1.png"
+      "category": "Burgers",
+      "popular": true,
+      "image": "burger.png",
+      "description": "Our signature burger delivered fast with cheddar and fresh veggies."
     },
     {
-      "id": "2",
-      "name": "Umami Dreams Poké",
+      "id": 3,
+      "title": "Original Burger",
+      "price": 83,
+      "category": "Burgers",
+      "popular": true,
+      "image": "burger.png",
+      "description": "Classic burger with lettuce, tomato, and our special house sauce."
+    },
+    {
+      "id": 4,
+      "title": "Double Cheeseburger",
+      "price": 105,
+      "category": "Burgers",
+      "popular": false,
+      "image": "burger.png",
+      "description": "Two juicy patties with melted cheese, perfect for big appetites."
+    },
+    {
+      "id": 5,
+      "title": "Cheeseburger Deluxe",
+      "price": 99,
+      "category": "Burgers",
+      "popular": false,
+      "image": "burger.png",
+      "description": "Tender beef, cheese, and crisp lettuce served on a toasted bun."
+    },
+    {
+      "id": 6,
+      "title": "Saftig dubbelburgare med smält ost",
+      "price": 92,
+      "category": "Burgers",
+      "popular": false,
+      "image": "burger.png",
+      "description": "Double patty burger with perfectly melted cheese."
+    },
+    {
+      "id": 7,
+      "title": "Krispig kycklingsmörgås med pretzelbröd",
+      "price": 89,
+      "category": "Burgers",
+      "popular": false,
+      "image": "burger.png",
+      "description": "Crispy chicken sandwich served on a soft pretzel bun."
+    },
+    {
+      "id": 8,
+      "title": "Gourmetburgare med tryffelsås och svamp",
+      "price": 97,
+      "category": "Burgers",
+      "popular": false,
+      "image": "burger.png",
+      "description": "Gourmet burger with truffle sauce and sautéed mushrooms."
+    },
+    {
+      "id": 9,
+      "title": "Dubbelostburgare med krispig brödskorpa",
+      "price": 85,
+      "category": "Burgers",
+      "popular": false,
+      "image": "burger.png",
+      "description": "Double cheese burger with a crunchy crust bun."
+    },
+    {
+      "id": 10,
+      "title": "Maki Poké Bowl",
+      "price": 70,
+      "category": "Poké Bowl",
+      "popular": true,
+      "image": "poké.png",
+      "description": "Fresh salmon and mango on a bed of sushi rice, garnished with sesame and seaweed."
+    },
+    {
+      "id": 11,
+      "title": "Avoloha Poké Bowl",
+      "price": 72,
+      "category": "Poké Bowl",
+      "popular": true,
+      "image": "poké.png",
+      "description": "Avocado, tuna, and edamame mixed with a light soy dressing over rice."
+    },
+    {
+      "id": 12,
+      "title": "Umami Dreams Poké Bowl",
       "price": 75,
-      "category": "poke",
-      "image": "/images/poke1.png"
+      "category": "Poké Bowl",
+      "popular": true,
+      "image": "poké.png",
+      "description": "Umami-rich marinated tofu, mushrooms, and seaweed salad with brown rice."
     },
     {
-      "id": "3",
-      "name": "Strawberry Milkshake",
+      "id": 13,
+      "title": "Original Poké Bowl",
+      "price": 72,
+      "category": "Poké Bowl",
+      "popular": false,
+      "image": "poké.png",
+      "description": "Classic mix of tuna, cucumber, and carrot with sesame sauce on white rice."
+    },
+    {
+      "id": 14,
+      "title": "Waikiki Poké Bowl",
+      "price": 69,
+      "category": "Poké Bowl",
+      "popular": false,
+      "image": "poké.png",
+      "description": "Tropical flavors with pineapple, grilled chicken, and sweet chili glaze."
+    },
+    {
+      "id": 15,
+      "title": "Avocado Bowl",
+      "price": 75,
+      "category": "Poké Bowl",
+      "popular": false,
+      "image": "poké.png",
+      "description": "Creamy avocado slices, cherry tomatoes, and arugula on sushi rice."
+    },
+    {
+      "id": 16,
+      "title": "Pika Heat Poké Bowl",
       "price": 74,
-      "category": "drink",
-      "image": "/images/milkshake1.png"
+      "category": "Poké Bowl",
+      "popular": false,
+      "image": "poké.png",
+      "description": "Spicy tuna and jalapeños with sriracha aioli over warm sushi rice."
+    },
+    {
+      "id": 17,
+      "title": "Tropic Vibes Poké Bowl",
+      "price": 76,
+      "category": "Poké Bowl",
+      "popular": false,
+      "image": "poké.png",
+      "description": "Pineapple, tofu, and cilantro with a tropical vinaigrette."
+    },
+    {
+      "id": 18,
+      "title": "Tofu Inferno Poké Bowl",
+      "price": 75,
+      "category": "Poké Bowl",
+      "popular": false,
+      "image": "poké.png",
+      "description": "Spicy marinated tofu, crispy onions, and creamy chili mayo."
+    },
+    {
+      "id": 19,
+      "title": "Crispy Fries",
+      "price": 29,
+      "category": "Sides",
+      "popular": true,
+      "image": "sides.png",
+      "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal."
+    },
+    {
+      "id": 20,
+      "title": "Sweet Potato Fries",
+      "price": 35,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "Sweet and crispy sweet potato fries that bring a twist to traditional snacking."
+    },
+    {
+      "id": 21,
+      "title": "Onion Rings",
+      "price": 32,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "Crispy battered onion rings with a soft, sweet interior — a true classic."
+    },
+    {
+      "id": 22,
+      "title": "Mozzarella Sticks (5 st)",
+      "price": 39,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "Five gooey mozzarella sticks in a golden, crunchy breading. Dip and enjoy!"
+    },
+    {
+      "id": 23,
+      "title": "Chili Mayo",
+      "price": 10,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "Spicy chili mayo that adds a fiery finish to any dish or dip."
+    },
+    {
+      "id": 24,
+      "title": "Truffle Dip",
+      "price": 10,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "A rich and aromatic truffle-infused dip for the gourmet enthusiast."
+    },
+    {
+      "id": 25,
+      "title": "Garlic Aioli",
+      "price": 10,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "Creamy garlic aioli with a bold flavor that pairs with everything."
+    },
+    {
+      "id": 26,
+      "title": "Soy & Sesame",
+      "price": 10,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "A savory soy and sesame sauce perfect for Asian-inspired dishes."
+    },
+    {
+      "id": 27,
+      "title": "Sriracha Mayo",
+      "price": 10,
+      "category": "Sides",
+      "popular": false,
+      "image": "sides.png",
+      "description": "A zesty, spicy mayo blended with iconic Sriracha chili."
+    },
+    {
+      "id": 28,
+      "title": "Coca-Cola / Zero",
+      "price": 22,
+      "category": "Drinks & Milkshakes",
+      "popular": false,
+      "image": "drinks.png",
+      "description": "Classic or zero sugar Coca-Cola to refresh your meal."
+    },
+    {
+      "id": 29,
+      "title": "Fanta Exotic",
+      "price": 22,
+      "category": "Drinks & Milkshakes",
+      "popular": false,
+      "image": "drinks.png",
+      "description": "A fruity and fun soda with exotic tropical flavors."
+    },
+    {
+      "id": 30,
+      "title": "Sprite",
+      "price": 22,
+      "category": "Drinks & Milkshakes",
+      "popular": false,
+      "image": "drinks.png",
+      "description": "Lemon-lime soda that’s crisp, clean, and always satisfying."
+    },
+    {
+      "id": 31,
+      "title": "Loka Citron",
+      "price": 20,
+      "category": "Drinks & Milkshakes",
+      "popular": false,
+      "image": "drinks.png",
+      "description": "Swedish sparkling water with a fresh lemon flavor."
+    },
+    {
+      "id": 32,
+      "title": "Strawberry Milkshake",
+      "price": 42,
+      "category": "Drinks & Milkshakes",
+      "popular": true,
+      "image": "drinks.png",
+      "description": "Creamy strawberry milkshake made with real fruit and love."
+    },
+    {
+      "id": 33,
+      "title": "Blueberry Milkshake",
+      "price": 42,
+      "category": "Drinks & Milkshakes",
+      "popular": true,
+      "image": "drinks.png",
+      "description": "Rich blueberry milkshake with a perfect blend of tart and sweet."
+    },
+    {
+      "id": 34,
+      "title": "Chocolate Milkshake",
+      "price": 42,
+      "category": "Drinks & Milkshakes",
+      "popular": false,
+      "image": "drinks.png",
+      "description": "A chocolate lover’s dream — thick, creamy, and totally indulgent."
+    },
+    {
+      "id": 35,
+      "title": "Vanilla Bean Milkshake",
+      "price": 39,
+      "category": "Drinks & Milkshakes",
+      "popular": false,
+      "image": "drinks.png",
+      "description": "Classic vanilla milkshake with real vanilla bean specks for depth and warmth."
     }
   ],
-  "orders": [
-    {
-      "id": "98d4",
-      "customer": {
-        "name": "Test",
-        "city": "Malmö",
-        "street": "Töntgatan",
-        "number": "1",
-        "payment": "swish"
-      },
-      "items": [
-        {
-          "id": "1",
-          "name": "A Drone’s Special",
-          "price": 87,
-          "category": "burger",
-          "image": "/images/burger1.png",
-          "quantity": 2
-        },
-        {
-          "id": "2",
-          "name": "Umami Dreams Poké",
-          "price": 75,
-          "category": "poke",
-          "image": "/images/poke1.png",
-          "quantity": 1
-        }
-      ],
-      "createdAt": "2025-05-26T15:20:24.525Z"
-    }
-  ]
+  "orders": []
 }

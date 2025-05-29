@@ -1,12 +1,35 @@
-/* App.css eller Header.css */
+/* Se till att html och body tar hela höjden */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
+  background-color: #fcefd8;
+}
+
+/* Gör rootcontainern till en flex-column som fyller hela höjden */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Gör main till att ta upp all tillgänglig plats */
+main {
+  flex: 1;
+}
+
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff1e6;
+  background-color: #fcefd8;
   padding: 1rem 2rem;
   border-bottom: 2px solid #d64a2e;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo {
@@ -30,13 +53,14 @@
   text-decoration: underline;
 }
 
+/* FOOTER */
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: #fff1e6;
+  background-color: #fcefd8;
   padding: 2rem 1rem;
   border-top: 2px solid #d64a2e;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer h4 {
@@ -49,3 +73,77 @@
   font-size: 0.9rem;
   color: #444;
 }
+
+/* HOME */
+.home-container {
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* ALTERNATIV SEKTIONSTITEL OCH MENYGRID */
+.section-title {
+  text-align: center;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #2e5b51;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 20px 60px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Anpassning för mindre skärmar */
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu-columns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+

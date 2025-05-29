@@ -1,34 +1,47 @@
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
   const { isLoggedIn, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
   return (
     <header className="header">
-      <div className="logo">
-        <Link to="/">🍽️ DRONE DELIGHTS</Link>
-      </div>
-      <nav>
-        <Link to="/cart">🛒</Link>
+      <Link to="/" className="header-left">
+        <img src="/logo.png" alt="Drone Delights Logo" className="logo-img" />
+        <div className="logo-text">
+          <div>DRONE</div>
+          <div>DELIGHTS</div>
+        </div>
+      </Link>
+
+      <div className="header-right">
+        <Link to="/cart">
+          <img src="/cart.png" alt="Shopping Cart" className="cart-icon" />
+        </Link>
+
         {isLoggedIn ? (
           <>
-            <Link to="/profile">Profile</Link>
-            <button
-              onClick={() => {
-                logout();
-                navigate("/");
-              }}
-            >
+            <Link to="/profile" className="nav-link">
+              Profile
+            </Link>
+            <button className="logout-btn" onClick={handleLogout}>
               Log out
             </button>
           </>
         ) : (
-          <Link to="/login">Sign in</Link>
+          <Link to="/login" className="signin-btn">
+            Sign in
+          </Link>
         )}
-      </nav>
+      </div>
     </header>
   );
 }

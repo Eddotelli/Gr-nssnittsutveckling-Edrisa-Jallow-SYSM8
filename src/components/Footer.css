@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Figma+Hand&family=IBM+Plex+Mono&display=swap");
+
+.footer {
+  font-family: "IBM Plex Mono", monospace;
+  color: #fcefd8;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Övre del – logotyp och citat sida vid sida */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: auto;
+  width: 100%;
+}
+
+.footer-top {
+  background-color: #467066;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 400px;
+  width: 100%;
+}
+
+.footer-logo {
+  color: #fcefd8;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-quote {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #fcefd8;
+  letter-spacing: 0.12em;
+  max-width: 400px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Nedre del – 3 sektioner bredvid varandra */
+.footer-bottom {
+  background-color: #2e5b51;
+  padding: 48px 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.footer-section h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-family: "IBM Plex Mono", monospace;
+  color:#fcefd8;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.social-icons img {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+
+/* Copyright längst ner centrerat */
+.footer-bottom .footer-copyright {
+  font-size: 14px;
+  letter-spacing: 0.32em;
+  margin-top: 32px;
+  text-align: center;
+}

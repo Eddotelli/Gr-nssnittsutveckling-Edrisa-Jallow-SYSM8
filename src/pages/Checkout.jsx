@@ -1,31 +1,45 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
+import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Checkout() {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, clearCart } = useContext(CartContext);
+  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: "",
+    email: user?.email || "", // förifyll om inloggad
     city: "",
     street: "",
     number: "",
     payment: "swish",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (cartItems.length === 0) {
+      alert("Din varukorg är tom.");
+      return;
+    }
+
+    const total = cartItems.reduce(
+      (sum, item) => sum + item.price * (item.quantity || 1),
+      0
+    );
+
     const order = {
       customer: formData,
       items: cartItems,
-      createdAt: new Date(),
+      total,
+      createdAt: new Date().toISOString(),
     };
 
     await fetch("http://localhost:3001/orders", {
@@ -34,6 +48,7 @@ export default function Checkout() {
       body: JSON.stringify(order),
     });
 
+    clearCart();
     navigate("/thankyou");
   };
 
@@ -47,6 +62,14 @@ export default function Checkout() {
             name="name"
             placeholder="Name"
             value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            value={formData.email}
             onChange={handleChange}
             required
           />
@@ -71,6 +94,7 @@ export default function Checkout() {
             onChange={handleChange}
             required
           />
+
           <label>
             <input
               type="radio"
@@ -91,6 +115,7 @@ export default function Checkout() {
             />
             Card
           </label>
+
           <button type="submit">Pay</button>
         </form>
       </main>

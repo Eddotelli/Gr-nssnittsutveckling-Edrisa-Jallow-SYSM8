@@ -24,7 +24,7 @@ export default function Cart() {
           <>
             {cartItems.map((item) => (
               <div key={item.id} className="cart-item">
-                <h3>{item.name}</h3>
+                <h3>{item.title}</h3>
                 <p>{item.price} kr</p>
                 <input
                   type="number"
