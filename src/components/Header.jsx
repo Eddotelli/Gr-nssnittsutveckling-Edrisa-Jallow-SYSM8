@@ -1,15 +1,15 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { CartContext } from "../context/CartContext"; // 🔹 New import
+import { CartContext } from "../context/CartContext";
 import "./Header.css";
 
 export default function Header() {
   const { isLoggedIn, logout, user } = useContext(AuthContext);
-  const { cartItems } = useContext(CartContext); // 🔹 Get cart items
+  const { cartItems } = useContext(CartContext);
+  const [menuOpen, setMenuOpen] = useState(false); // 🔹 Toggle menu
   const navigate = useNavigate();
 
-  // Count total quantity of items in cart
   const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   const handleLogout = () => {
@@ -28,9 +28,19 @@ export default function Header() {
         </div>
       </Link>
 
-      {/* Navigation links on the right */}
-      <nav className="header-right">
-        {/* Cart icon with count */}
+      {/* Hamburger icon (visible on small screens) */}
+      <button
+        className="hamburger"
+        aria-label="Toggle menu"
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+
+      {/* Navigation links */}
+      <nav className={`header-right ${menuOpen ? "open" : ""}`}>
         <Link to="/cart" className="cart-icon-wrapper" aria-label="Go to cart">
           <img src="/cart.png" alt="Shopping Cart" className="cart-icon" />
           {totalQuantity > 0 && (
@@ -38,18 +48,16 @@ export default function Header() {
           )}
         </Link>
 
-        {/* Favorites link (if logged in) */}
         {isLoggedIn && (
           <Link
             to="/favorites"
             className="favorites-link"
-            aria-label="Your favorites"
+            aria-label="Favorites"
           >
             ❤️
           </Link>
         )}
 
-        {/* User links */}
         {isLoggedIn ? (
           <>
             {user?.name && (
@@ -57,7 +65,7 @@ export default function Header() {
                 👋 {user.name}
               </span>
             )}
-            <Link to="/profile" className="nav-link" aria-label="Go to profile">
+            <Link to="/profile" className="nav-link" aria-label="Profile">
               Profile
             </Link>
             <button

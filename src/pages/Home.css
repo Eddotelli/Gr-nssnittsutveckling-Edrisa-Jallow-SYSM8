@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
-/* ======================= */
-/* ===== CONTAINER ======= */
-/* ======================= */
+/* ============================== */
+/* ===== HOME PAGE STYLES ====== */
+/* ============================== */
 .home-container {
   padding: 2rem 1rem;
   max-width: 1200px;
@@ -10,54 +10,55 @@
   font-family: "IBM Plex Mono", monospace;
 }
 
-/* ======================= */
-/* ===== TITEL =========== */
-/* ======================= */
+/* ============================== */
+/* ===== SECTION TITLE ========== */
+/* ============================== */
 .section-title {
   font-size: 2rem;
-  text-align: center;
   margin: 2rem 0 1rem;
   color: #333;
+  text-align: center;
 }
 
-/* ======================= */
-/* ===== MENU GRID ======= */
-/* ======================= */
+/* ============================== */
+/* ===== MENU GRID ============== */
+/* ============================== */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 2rem;
-  justify-items: center;
+  padding: 1rem 0;
 }
 
+/* ============================== */
+/* ===== FALLBACK TEXT ========== */
+/* ============================== */
 .no-items {
+  font-size: 1.2rem;
   text-align: center;
-  font-size: 1.1rem;
+  color: #888;
   margin-top: 2rem;
-  color: #666;
 }
 
-/* ======================= */
-/* === RESERVERADE KLASSER */
-/* ======================= */
-.menu-columns {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-}
-
-.menu-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/* ======================= */
-/* ===== RESPONSIVE ====== */
-/* ======================= */
-@media (max-width: 600px) {
+/* ============================== */
+/* ===== RESPONSIVE DESIGN ====== */
+/* ============================== */
+@media (max-width: 768px) {
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .menu-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
   }
 }

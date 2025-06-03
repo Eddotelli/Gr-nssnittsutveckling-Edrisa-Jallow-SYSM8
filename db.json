@@ -23,7 +23,7 @@
       "title": "Original Burger",
       "price": 83,
       "category": "Burgers",
-      "popular": true,
+      "popular": false,
       "image": "burger.png",
       "description": "Classic burger with lettuce, tomato, and our special house sauce."
     },
@@ -104,7 +104,7 @@
       "title": "Umami Dreams Poké Bowl",
       "price": 75,
       "category": "Poké Bowl",
-      "popular": true,
+      "popular": false,
       "image": "poké.png",
       "description": "Umami-rich marinated tofu, mushrooms, and seaweed salad with brown rice."
     },
@@ -284,7 +284,7 @@
       "title": "Strawberry Milkshake",
       "price": 42,
       "category": "Drinks & Milkshakes",
-      "popular": true,
+      "popular": false,
       "image": "drinks.png",
       "description": "Creamy strawberry milkshake made with real fruit and love."
     },

@@ -1,3 +1,4 @@
+// src/App.js
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -8,6 +9,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Favorites from "./pages/Favorites";
+import Menu from "./pages/Menu"; // ✅ New import
 import PrivateRoute from "./components/PrivateRoute";
 import "./App.css";
 
@@ -17,11 +19,11 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} /> {/* ✅ New route */}
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-
-          {/* Skyddade routes */}
+          {/* Protected routes */}
           <Route
             path="/profile"
             element={
@@ -47,16 +49,6 @@ function App() {
             }
           />
           <Route path="/thankyou" element={<ThankYou />} />
-
-          {/* Valfri test-route */}
-          <Route
-            path="/private"
-            element={
-              <PrivateRoute>
-                <div>Private Content</div>
-              </PrivateRoute>
-            }
-          />
         </Routes>
       </Layout>
     </Router>

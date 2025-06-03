@@ -5,29 +5,36 @@
 /* ============================== */
 .hero-section {
   width: 100%;
-  height: auto;
-  min-height: 500px;
-  max-height: 700px;
-  background-size: contain;
+  height: 600px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
+  position: relative;
   font-family: "IBM Plex Mono", monospace;
-  background-color: #fffef8; /* fallback if image fails */
+  background-color: #fffef8;
+  overflow: hidden;
+}
+
+/* ============================== */
+/* ===== OVERLAY ================ */
+/* ============================== */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ============================== */
 /* ===== TEXT CONTAINER ========= */
 /* ============================== */
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 16px;
   color: #fcefd8;
   text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
   max-width: 700px;
 }
 
@@ -35,12 +42,32 @@
 /* ===== TEXT STYLES ============ */
 /* ============================== */
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ============================== */
+/* ===== BUTTON STYLE =========== */
+/* ============================== */
+.hero-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #d84f2a;
+  color: #fcefd8;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #bb3e1d;
 }
 
 /* ============================== */
@@ -48,14 +75,19 @@
 /* ============================== */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .hero-text {
     padding: 1.5rem;
+  }
+
+  .hero-button {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.5rem;
   }
 }

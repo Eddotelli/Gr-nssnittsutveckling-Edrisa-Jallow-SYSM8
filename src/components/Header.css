@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  transition: max-height 0.3s ease;
 }
 
 .cart-icon-wrapper {
@@ -73,9 +74,6 @@
   text-align: center;
 }
 
-/* ========================= */
-/* ====== NAV BUTTONS ====== */
-/* ========================= */
 .nav-link,
 .signin-btn,
 .logout-btn {
@@ -109,33 +107,50 @@
 }
 
 /* ========================= */
+/* ======== HAMBURGER ====== */
+/* ========================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 24px;
+  height: 3px;
+  background-color: #fcefd8;
+  border-radius: 2px;
+}
+
+/* ========================= */
 /* ======= RESPONSIVE ====== */
 /* ========================= */
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .header-left {
-    justify-content: center;
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
   }
 
   .header-right {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #467066;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .header-right.open {
+    max-height: 300px;
+  }
+
+  .header {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-link,
-  .signin-btn,
-  .logout-btn {
-    font-size: 14px;
-    padding: 4px 10px;
-  }
-
-  .cart-icon {
-    height: 24px;
   }
 }

@@ -1,83 +1,39 @@
-import { useContext, useState } from "react";
+// src/components/MenuCard.jsx
+import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import { FavoritesContext } from "../context/FavoritesContext";
 import "./MenuCard.css";
 
 export default function MenuCard({ item }) {
-  // Get addToCart function from CartContext
   const { addToCart } = useContext(CartContext);
 
-  // Get favorite functions from FavoritesContext
-  const { isFavorite, addFavorite, removeFavorite } =
-    useContext(FavoritesContext);
-
-  // State for showing popup notification when item is added to cart
-  const [showPopup, setShowPopup] = useState(false);
-
-  // State for showing/hiding the description
-  const [showDescription, setShowDescription] = useState(false);
-
-  // Handle adding item to cart and show popup
-  const handleAdd = () => {
-    addToCart(item);
-    setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 2000);
-  };
-
-  // Handle toggling favorite status
-  const toggleFavorite = () => {
-    if (isFavorite(item.id)) {
-      removeFavorite(item.id);
-    } else {
-      addFavorite(item.id);
-    }
-  };
-
   return (
-    <div className="menu-card">
-      {/* Favorite icon button */}
-      <button
-        className="favorite-icon"
-        onClick={toggleFavorite}
-        aria-label="Toggle favorite"
-      >
-        {isFavorite(item.id) ? "❤️" : "🤍"}
-      </button>
+    <div
+      className={`menu-card ${item.popular ? "popular" : ""}`}
+      aria-label={`${item.title} menu item`}
+    >
+      {/* Image of the food item */}
+      <img
+        src={item.image}
+        alt={item.title}
+        className="menu-image"
+        loading="lazy"
+      />
 
-      {/* Product image */}
-      <img src={item.image} alt={item.title} className="menu-card-image" />
-
-      {/* Product title */}
-      <h3 className="menu-card-title">{item.title}</h3>
-
-      {/* Button to show/hide description */}
-      <button
-        className="toggle-description-btn"
-        onClick={() => setShowDescription((prev) => !prev)}
-        aria-label="Toggle description"
-      >
-        {showDescription ? "−" : "+"}
-      </button>
-
-      {/* Product description, shown if showDescription is true */}
-      {showDescription && (
-        <p className="menu-card-description">{item.description}</p>
-      )}
-
-      {/* Product price */}
-      <p className="menu-card-price">{item.price} kr</p>
-
-      {/* Add to cart button */}
-      <button className="menu-card-button" onClick={handleAdd}>
-        Add to cart
-      </button>
-
-      {/* Popup notification when item is added to cart */}
-      {showPopup && (
-        <div className="popup-notification">
-          {item.title} was added to the cart!
+      {/* Text details */}
+      <div className="menu-details">
+        <h3 className="menu-title">{item.title}</h3>
+        <p className="menu-desc">{item.description}</p>
+        <div className="menu-bottom">
+          <span className="menu-price">{item.price} kr</span>
+          <button
+            className="add-btn"
+            onClick={() => addToCart(item)}
+            aria-label={`Add ${item.title} to cart`}
+          >
+            +
+          </button>
         </div>
-      )}
+      </div>
     </div>
   );
 }
