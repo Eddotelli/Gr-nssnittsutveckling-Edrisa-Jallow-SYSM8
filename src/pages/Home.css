@@ -1,14 +1,63 @@
-.menu-columns {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-  }
-  
-  .menu-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
-  
+/* ======================= */
+/* ===== CONTAINER ======= */
+/* ======================= */
+.home-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* ======================= */
+/* ===== TITEL =========== */
+/* ======================= */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+/* ======================= */
+/* ===== MENU GRID ======= */
+/* ======================= */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.no-items {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: #666;
+}
+
+/* ======================= */
+/* === RESERVERADE KLASSER */
+/* ======================= */
+.menu-columns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ======================= */
+/* ===== RESPONSIVE ====== */
+/* ======================= */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

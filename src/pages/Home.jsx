@@ -1,13 +1,17 @@
+// Home.jsx
 import { useState, useEffect } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Hero from "../components/Hero"; // ✅ Importera Hero-komponenten
 import MenuCard from "../components/MenuCard";
 import CategoryMenu from "../components/CategoryMenu";
+import "./Home.css";
 
 export default function Home() {
+  // State to store all menu items fetched from backend
   const [menuItems, setMenuItems] = useState([]);
+  // State to track the currently selected category
   const [category, setCategory] = useState("All");
 
+  // Fetch menu items from backend when component mounts
   useEffect(() => {
     fetch("http://localhost:3001/menu")
       .then((res) => res.json())
@@ -15,38 +19,38 @@ export default function Home() {
       .catch((err) => console.error("Could not retrieve menu data:", err));
   }, []);
 
-  // Filtrera baserat på kategori
+  // Filter menu items based on selected category
   const filteredItems =
     category === "All"
-      ? menuItems.filter((item) => item.popular === true)
+      ? menuItems.filter((item) => item.popular === true) // Show only popular items if "All" is selected
       : menuItems.filter(
           (item) => item.category.toLowerCase() === category.toLowerCase()
-        );
+        ); // Otherwise, filter by category
 
   return (
-    <>
-      <Header />
+    <main className="home-container">
+      {/* Hero section at the top */}
+      <Hero />
 
-      <main className="home-container">
-        {/* Kategorirad */}
-        <CategoryMenu currentCategory={category} setCategory={setCategory} />
+      {/* Category navigation menu */}
+      <CategoryMenu currentCategory={category} setCategory={setCategory} />
 
-        {/* Titel */}
-        <h1 className="section-title">
-          {category === "All" ? "Popular Items" : category}
-        </h1>
+      {/* Section title changes depending on selected category */}
+      <h1 className="section-title" id="popular">
+        {category === "All" ? "Popular Items" : category}
+      </h1>
 
-        {/* Menykort */}
+      {/* Show menu items if any are found, otherwise show a message */}
+      {filteredItems.length > 0 ? (
         <div className="menu-grid">
-          {filteredItems.length > 0 ? (
-            filteredItems.map((item) => <MenuCard key={item.id} item={item} />)
-          ) : (
-            <p>Inga rätter att visa.</p>
-          )}
+          {/* Render a MenuCard for each filtered item */}
+          {filteredItems.map((item) => (
+            <MenuCard key={item.id} item={item} />
+          ))}
         </div>
-      </main>
-
-      <Footer />
-    </>
+      ) : (
+        <p className="no-items">No items to display in this category.</p>
+      )}
+    </main>
   );
 }

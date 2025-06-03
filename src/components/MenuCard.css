@@ -1,77 +1,137 @@
+/* ========================= */
+/* ===== MENU CARD BASE ==== */
+/* ========================= */
 .menu-card {
-    background-color: #fff8ed;
-    border: 2px solid #f5d6c6;;
-    border-radius: 16px;
-    padding: 1rem;
-    text-align: center;
-    width: 200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s ease;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-  
-  .menu-card:hover {
-    transform: scale(1.03);
-    border-color: #d84f2a;
-  }
-  
-  .menu-card-image {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
-  }
-  
-  .menu-card-title {
-    font-size: 16px;
-    margin: 0.5rem 0;
-    color: #333;
-  }
-  
-  .menu-card-price {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 0.75rem;
-  }
-  
-  .menu-card-button {
-    padding: 0.5rem 1rem;
-    background-color: #d84f2a;
-    color: #fcefd8;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .menu-card-button:hover {
-    background-color: #bb3e1d;
-  }
+  background-color: #fff8ed;
+  border: 2px solid #f5d6c6;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  position: relative;
+}
 
-  .menu-card-description {
-    font-size: 13px;
-    color: #444;
-    margin: 0.5rem 0;
-    line-height: 1.4;
-  }
-  
-  .toggle-description-btn {
-    background: none;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #d84f2a;
-    margin-bottom: 0.25rem;
-  }
-  
-  .toggle-description-btn:hover {
-    color: #bb3e1d;
-  }
+.menu-card:hover {
+  transform: scale(1.03);
+  border-color: #d84f2a;
+}
 
-  
-  
-  
-  
-  
-  
+/* ========================= */
+/* ===== IMAGE + TEXT ====== */
+/* ========================= */
+.menu-card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card-title {
+  font-size: 16px;
+  margin: 0.5rem 0 0.25rem;
+  color: #333;
+}
+
+.menu-card-price {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #d84f2a;
+  z-index: 2;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.2);
+}
+
+
+/* ========================= */
+/* ======= BUTTONS ========= */
+/* ========================= */
+.menu-card-button {
+  padding: 0.5rem 1rem;
+  background-color: #d84f2a;
+  color: #fcefd8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-card-button:hover {
+  background-color: #bb3e1d;
+}
+
+.toggle-description-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #d84f2a;
+  margin-bottom: 0.25rem;
+}
+
+.toggle-description-btn:hover {
+  color: #bb3e1d;
+}
+
+/* ========================= */
+/* ====== DESCRIPTION ====== */
+/* ========================= */
+.menu-card-description {
+  font-size: 13px;
+  color: #444;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+/* ========================= */
+/* ==== POPUP NOTIFICATION = */
+/* ========================= */
+.popup-notification {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #467066;
+  color: #fcefd8;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 2s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

@@ -1,7 +1,7 @@
 {
   "menu": [
     {
-      "id": 1,
+      "id": "1",
       "title": "C-Town’s Finest Bacon BBQ Stack",
       "price": 95,
       "category": "Burgers",
@@ -10,7 +10,7 @@
       "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "A Drone’s Special",
       "price": 87,
       "category": "Burgers",
@@ -19,7 +19,7 @@
       "description": "Our signature burger delivered fast with cheddar and fresh veggies."
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Original Burger",
       "price": 83,
       "category": "Burgers",
@@ -28,7 +28,7 @@
       "description": "Classic burger with lettuce, tomato, and our special house sauce."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Double Cheeseburger",
       "price": 105,
       "category": "Burgers",
@@ -37,7 +37,7 @@
       "description": "Two juicy patties with melted cheese, perfect for big appetites."
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Cheeseburger Deluxe",
       "price": 99,
       "category": "Burgers",
@@ -46,8 +46,8 @@
       "description": "Tender beef, cheese, and crisp lettuce served on a toasted bun."
     },
     {
-      "id": 6,
-      "title": "Saftig dubbelburgare med smält ost",
+      "id": "6",
+      "title": "Juicy Double Burger with Melted Cheese",
       "price": 92,
       "category": "Burgers",
       "popular": false,
@@ -55,8 +55,8 @@
       "description": "Double patty burger with perfectly melted cheese."
     },
     {
-      "id": 7,
-      "title": "Krispig kycklingsmörgås med pretzelbröd",
+      "id": "7",
+      "title": "Crispy Chicken Burger with Pretzel Bun",
       "price": 89,
       "category": "Burgers",
       "popular": false,
@@ -64,8 +64,8 @@
       "description": "Crispy chicken sandwich served on a soft pretzel bun."
     },
     {
-      "id": 8,
-      "title": "Gourmetburgare med tryffelsås och svamp",
+      "id": "8",
+      "title": "Gourmet Burger with Truffle Sauce and Mushrooms",
       "price": 97,
       "category": "Burgers",
       "popular": false,
@@ -73,8 +73,8 @@
       "description": "Gourmet burger with truffle sauce and sautéed mushrooms."
     },
     {
-      "id": 9,
-      "title": "Dubbelostburgare med krispig brödskorpa",
+      "id": "9",
+      "title": "Double Cheese Burger with Crunchy Crust Bun",
       "price": 85,
       "category": "Burgers",
       "popular": false,
@@ -82,7 +82,7 @@
       "description": "Double cheese burger with a crunchy crust bun."
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Maki Poké Bowl",
       "price": 70,
       "category": "Poké Bowl",
@@ -91,7 +91,7 @@
       "description": "Fresh salmon and mango on a bed of sushi rice, garnished with sesame and seaweed."
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Avoloha Poké Bowl",
       "price": 72,
       "category": "Poké Bowl",
@@ -100,7 +100,7 @@
       "description": "Avocado, tuna, and edamame mixed with a light soy dressing over rice."
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Umami Dreams Poké Bowl",
       "price": 75,
       "category": "Poké Bowl",
@@ -109,7 +109,7 @@
       "description": "Umami-rich marinated tofu, mushrooms, and seaweed salad with brown rice."
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Original Poké Bowl",
       "price": 72,
       "category": "Poké Bowl",
@@ -118,7 +118,7 @@
       "description": "Classic mix of tuna, cucumber, and carrot with sesame sauce on white rice."
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Waikiki Poké Bowl",
       "price": 69,
       "category": "Poké Bowl",
@@ -127,7 +127,7 @@
       "description": "Tropical flavors with pineapple, grilled chicken, and sweet chili glaze."
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Avocado Bowl",
       "price": 75,
       "category": "Poké Bowl",
@@ -136,7 +136,7 @@
       "description": "Creamy avocado slices, cherry tomatoes, and arugula on sushi rice."
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Pika Heat Poké Bowl",
       "price": 74,
       "category": "Poké Bowl",
@@ -145,7 +145,7 @@
       "description": "Spicy tuna and jalapeños with sriracha aioli over warm sushi rice."
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Tropic Vibes Poké Bowl",
       "price": 76,
       "category": "Poké Bowl",
@@ -154,7 +154,7 @@
       "description": "Pineapple, tofu, and cilantro with a tropical vinaigrette."
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Tofu Inferno Poké Bowl",
       "price": 75,
       "category": "Poké Bowl",
@@ -163,7 +163,7 @@
       "description": "Spicy marinated tofu, crispy onions, and creamy chili mayo."
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Crispy Fries",
       "price": 29,
       "category": "Sides",
@@ -172,7 +172,7 @@
       "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal."
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Sweet Potato Fries",
       "price": 35,
       "category": "Sides",
@@ -181,7 +181,7 @@
       "description": "Sweet and crispy sweet potato fries that bring a twist to traditional snacking."
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Onion Rings",
       "price": 32,
       "category": "Sides",
@@ -190,8 +190,8 @@
       "description": "Crispy battered onion rings with a soft, sweet interior — a true classic."
     },
     {
-      "id": 22,
-      "title": "Mozzarella Sticks (5 st)",
+      "id": "22",
+      "title": "Mozzarella Sticks (5 pcs)",
       "price": 39,
       "category": "Sides",
       "popular": false,
@@ -199,7 +199,7 @@
       "description": "Five gooey mozzarella sticks in a golden, crunchy breading. Dip and enjoy!"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Chili Mayo",
       "price": 10,
       "category": "Sides",
@@ -208,7 +208,7 @@
       "description": "Spicy chili mayo that adds a fiery finish to any dish or dip."
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Truffle Dip",
       "price": 10,
       "category": "Sides",
@@ -217,7 +217,7 @@
       "description": "A rich and aromatic truffle-infused dip for the gourmet enthusiast."
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Garlic Aioli",
       "price": 10,
       "category": "Sides",
@@ -226,7 +226,7 @@
       "description": "Creamy garlic aioli with a bold flavor that pairs with everything."
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Soy & Sesame",
       "price": 10,
       "category": "Sides",
@@ -235,7 +235,7 @@
       "description": "A savory soy and sesame sauce perfect for Asian-inspired dishes."
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Sriracha Mayo",
       "price": 10,
       "category": "Sides",
@@ -244,7 +244,7 @@
       "description": "A zesty, spicy mayo blended with iconic Sriracha chili."
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Coca-Cola / Zero",
       "price": 22,
       "category": "Drinks & Milkshakes",
@@ -253,7 +253,7 @@
       "description": "Classic or zero sugar Coca-Cola to refresh your meal."
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Fanta Exotic",
       "price": 22,
       "category": "Drinks & Milkshakes",
@@ -262,7 +262,7 @@
       "description": "A fruity and fun soda with exotic tropical flavors."
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Sprite",
       "price": 22,
       "category": "Drinks & Milkshakes",
@@ -271,8 +271,8 @@
       "description": "Lemon-lime soda that’s crisp, clean, and always satisfying."
     },
     {
-      "id": 31,
-      "title": "Loka Citron",
+      "id": "31",
+      "title": "Loka Lemon",
       "price": 20,
       "category": "Drinks & Milkshakes",
       "popular": false,
@@ -280,7 +280,7 @@
       "description": "Swedish sparkling water with a fresh lemon flavor."
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Strawberry Milkshake",
       "price": 42,
       "category": "Drinks & Milkshakes",
@@ -289,7 +289,7 @@
       "description": "Creamy strawberry milkshake made with real fruit and love."
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Blueberry Milkshake",
       "price": 42,
       "category": "Drinks & Milkshakes",
@@ -298,7 +298,7 @@
       "description": "Rich blueberry milkshake with a perfect blend of tart and sweet."
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Chocolate Milkshake",
       "price": 42,
       "category": "Drinks & Milkshakes",
@@ -307,7 +307,7 @@
       "description": "A chocolate lover’s dream — thick, creamy, and totally indulgent."
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "Vanilla Bean Milkshake",
       "price": 39,
       "category": "Drinks & Milkshakes",
@@ -316,5 +316,173 @@
       "description": "Classic vanilla milkshake with real vanilla bean specks for depth and warmth."
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "id": "fcb2",
+      "userId": "a7fa",
+      "customer": {
+        "name": "Test",
+        "street": "Malmögatan",
+        "number": "1",
+        "city": "Malmö",
+        "payment": "swish"
+      },
+      "items": [
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "burger.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "title": "Maki Poké Bowl",
+          "price": 70,
+          "category": "Poké Bowl",
+          "popular": true,
+          "image": "poké.png",
+          "description": "Fresh salmon and mango on a bed of sushi rice, garnished with sesame and seaweed.",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "title": "Crispy Fries",
+          "price": 29,
+          "category": "Sides",
+          "popular": true,
+          "image": "sides.png",
+          "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal.",
+          "quantity": 1
+        },
+        {
+          "id": "33",
+          "title": "Blueberry Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": true,
+          "image": "drinks.png",
+          "description": "Rich blueberry milkshake with a perfect blend of tart and sweet.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2025-05-31T15:23:16.774Z"
+    },
+    {
+      "id": "2490",
+      "userId": "a7fa",
+      "customer": {
+        "name": "Test 2",
+        "street": "Malmögatan",
+        "number": "1",
+        "city": "Malmö",
+        "payment": "swish"
+      },
+      "email": "admin@live.se",
+      "items": [
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "burger.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "title": "Crispy Fries",
+          "price": 29,
+          "category": "Sides",
+          "popular": true,
+          "image": "sides.png",
+          "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal.",
+          "quantity": 1
+        },
+        {
+          "id": "32",
+          "title": "Strawberry Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": true,
+          "image": "drinks.png",
+          "description": "Creamy strawberry milkshake made with real fruit and love.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2025-05-31T15:37:53.993Z"
+    },
+    {
+      "id": "3612",
+      "userId": "c030",
+      "customer": {
+        "name": "Åsna",
+        "street": "Malmögatan",
+        "number": "1",
+        "city": "Malmö",
+        "payment": "swish"
+      },
+      "email": "user@test.se",
+      "items": [
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "burger.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        },
+        {
+          "id": "13",
+          "title": "Original Poké Bowl",
+          "price": 72,
+          "category": "Poké Bowl",
+          "popular": false,
+          "image": "poké.png",
+          "description": "Classic mix of tuna, cucumber, and carrot with sesame sauce on white rice.",
+          "quantity": 1
+        },
+        {
+          "id": "12",
+          "title": "Umami Dreams Poké Bowl",
+          "price": 75,
+          "category": "Poké Bowl",
+          "popular": true,
+          "image": "poké.png",
+          "description": "Umami-rich marinated tofu, mushrooms, and seaweed salad with brown rice.",
+          "quantity": 1
+        },
+        {
+          "id": "33",
+          "title": "Blueberry Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": true,
+          "image": "drinks.png",
+          "description": "Rich blueberry milkshake with a perfect blend of tart and sweet.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2025-06-01T20:04:29.935Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "c030",
+      "name": "Test User",
+      "username": "user",
+      "email": "user@test.se",
+      "password": "password",
+      "phone": "000000000",
+      "street": "Malmögatan",
+      "number": "1"
+    }
+  ],
+  "favorites": []
 }

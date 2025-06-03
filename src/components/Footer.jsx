@@ -3,22 +3,20 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      {/* Övre sektion */}
-      <div class="footer-container">
-        <div className="footer-top">
-          <div className="footer-logo">
-            DRONE
-            <br />
-            DELIGHTS
-          </div>
-          <div className="footer-quote">
-            “Vi levererar mat snabbt och med stil, via drönare”
-          </div>
+      {/* Upper section */}
+      <section className="footer-top">
+        <div className="footer-logo" aria-label="Drone Delights logo">
+          DRONE
+          <br />
+          DELIGHTS
         </div>
-      </div>
+        <div className="footer-quote">
+          “We deliver food quickly and in style, via drones”
+        </div>
+      </section>
 
-      {/* Nedre sektion */}
-      <div className="footer-bottom">
+      {/* Lower section */}
+      <section className="footer-bottom" aria-label="Footer links">
         <div className="footer-links">
           <div className="footer-section">
             <h3>About us</h3>
@@ -34,16 +32,16 @@ export default function Footer() {
             <h3>Follow us</h3>
             <div className="social-icons">
               <img src="/instagram-icon.png" alt="Instagram" />
-              <img src="/x-icon.png" alt="X" />
+              <img src="/x-icon.png" alt="X (formerly Twitter)" />
               <img src="/tiktok-icon.png" alt="TikTok" />
             </div>
           </div>
         </div>
 
         <div className="footer-copyright">
-          © 2025 Drone Delights. Alla rättigheter förbehållna.
+          © 2025 Drone Delights. All rights reserved.
         </div>
-      </div>
+      </section>
     </footer>
   );
 }

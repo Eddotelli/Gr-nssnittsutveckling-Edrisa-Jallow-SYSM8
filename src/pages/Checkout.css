@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ======================== */
+/* ==== CONTAINER ========= */
+/* ======================== */
+.checkout-container {
+  padding: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #fffef8;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+/* ======================== */
+/* ===== FORMULÄR ========= */
+/* ======================== */
+.checkout-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.checkout-form input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #f5d6c6;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+}
+
+.checkout-form button {
+  padding: 0.75rem;
+  background-color: #d84f2a;
+  color: #fcefd8;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: #bb3e1d;
+}
+
+/* ======================== */
+/* === ORDER SUMMARY ====== */
+/* ======================== */
+.checkout-summary {
+  flex: 1;
+  background-color: #fff8ed;
+  border: 2px solid #f5d6c6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.checkout-summary h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.checkout-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Scrollbar styling */
+.checkout-item-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.checkout-item-list::-webkit-scrollbar-thumb {
+  background-color: #d84f2a;
+  border-radius: 8px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkout-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-info {
+  font-size: 14px;
+  color: #333;
+}
+
+.checkout-total {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ======================== */
+/* ===== MOBILANPASSNING == */
+/* ======================== */
+@media (max-width: 1024px) {
+  .checkout-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .checkout-summary {
+    margin-top: 2rem;
+  }
+}

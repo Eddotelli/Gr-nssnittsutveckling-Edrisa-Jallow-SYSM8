@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ============================== */
+/* ===== HERO SECTION =========== */
+/* ============================== */
+.hero-section {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-height: 700px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #fffef8; /* fallback if image fails */
+}
+
+/* ============================== */
+/* ===== TEXT CONTAINER ========= */
+/* ============================== */
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 16px;
+  color: #fcefd8;
+  text-align: center;
+  max-width: 700px;
+}
+
+/* ============================== */
+/* ===== TEXT STYLES ============ */
+/* ============================== */
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+}
+
+/* ============================== */
+/* ===== RESPONSIVE ============= */
+/* ============================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-text {
+    padding: 1.5rem;
+  }
+}

@@ -1,113 +1,39 @@
-/* Se till att html och body tar hela höjden */
+/* ============================= */
+/* ======== Global Reset ======= */
+/* ============================= */
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
+  overflow-x: hidden;
   background-color: #fcefd8;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Gör rootcontainern till en flex-column som fyller hela höjden */
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Gör main till att ta upp all tillgänglig plats */
 main {
   flex: 1;
 }
 
-
-/* HEADER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fcefd8;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid #d64a2e;
-  font-family: "Poppins", sans-serif;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #1c3a2e;
-}
-
-.nav a,
-.nav button {
-  margin-left: 1rem;
-  font-size: 1rem;
-  background: none;
-  border: none;
-  color: #1c3a2e;
-  cursor: pointer;
-}
-
-.nav button:hover,
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER */
-.footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #fcefd8;
-  padding: 2rem 1rem;
-  border-top: 2px solid #d64a2e;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer h4 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  color: #1c3a2e;
-}
-
-.footer p {
-  font-size: 0.9rem;
-  color: #444;
-}
-
-/* HOME */
+/* ============================= */
+/* ========== Home ============= */
+/* ============================= */
 .home-container {
   padding: 2rem 1rem;
 }
 
-.section-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 2rem 0 1.5rem;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
-}
-
-/* ALTERNATIV SEKTIONSTITEL OCH MENYGRID */
 .section-title {
   text-align: center;
   font-family: "Fredoka", sans-serif;
   font-size: 2rem;
   margin: 40px 0 20px;
   color: #2e5b51;
-}
-
-.menu-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  padding: 0 20px 60px;
 }
 
 .menu-grid {
@@ -133,6 +59,9 @@ main {
   }
 }
 
+/* ============================= */
+/* === Alternativa sektioner === */
+/* ============================= */
 .menu-columns {
   display: flex;
   justify-content: center;
@@ -145,5 +74,3 @@ main {
   flex-direction: column;
   gap: 1.5rem;
 }
-
-

@@ -1,30 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+/* ========================== */
+/* ===== MENU CONTAINER ===== */
+/* ========================== */
 .category-menu {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
   margin: 2rem auto;
   max-width: 1000px;
 }
 
+/* ========================== */
+/* ===== CATEGORY ITEM ====== */
+/* ========================== */
 .category-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  padding: 12px;
-  border-radius: 16px;
-  background-color: #fdf5e6;
   width: 100px;
   height: 120px;
+  padding: 12px;
   text-align: center;
+  background-color: #fdf5e6;
   border: 2px solid transparent;
-  box-sizing: border-box;
+  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .category-item:hover {
@@ -37,6 +44,9 @@
   background-color: #ffe8d9;
 }
 
+/* ========================== */
+/* ===== ICON + LABELS ====== */
+/* ========================== */
 .category-item img {
   max-width: 64px;
   max-height: 64px;
@@ -52,7 +62,9 @@
   line-height: 1.2;
 }
 
-/* Mobilanpassning */
+/* ========================== */
+/* ===== RESPONSIVE ========= */
+/* ========================== */
 @media (max-width: 600px) {
   .category-menu {
     gap: 1rem;

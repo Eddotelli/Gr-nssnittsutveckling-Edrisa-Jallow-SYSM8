@@ -1,97 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Figma+Hand&family=IBM+Plex+Mono&display=swap");
 
+/* ========================== */
+/* ========= FOOTER ========= */
+/* ========================== */
 .footer {
   font-family: "IBM Plex Mono", monospace;
   color: #fcefd8;
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 0;
 }
 
-/* Övre del – logotyp och citat sida vid sida */
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: auto;
-  width: 100%;
-}
-
+/* ========================== */
+/* ======= TOP SECTION ====== */
+/* ========================== */
 .footer-top {
   background-color: #467066;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 48px 400px;
-  width: 100%;
+  flex-wrap: wrap;
+  padding: 48px 10vw;
 }
 
 .footer-logo {
-  color: #fcefd8;
+  font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: bold;
-  font-family: "Inter", sans-serif;
+  color: #fcefd8;
 }
 
 .footer-quote {
-  font-family: "IBM Plex Mono", monospace;
+  max-width: 600px;
   font-size: 16px;
-  color: #fcefd8;
   letter-spacing: 0.12em;
-  max-width: 400px;
+  color: #fcefd8;
   text-align: left;
-  white-space: nowrap;
 }
 
-/* Nedre del – 3 sektioner bredvid varandra */
+/* ========================== */
+/* ===== BOTTOM SECTION ===== */
+/* ========================== */
 .footer-bottom {
   background-color: #2e5b51;
-  padding: 48px 64px 24px;
+  padding: 48px 5vw 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 180px;
-  flex-wrap: nowrap;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 5rem;
   max-width: 1000px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .footer-section h3 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 28px;
+  font-size: 22px;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
 }
 
 .footer-section p {
-  font-family: "IBM Plex Mono", monospace;
-  color:#fcefd8;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.05em;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
+/* ========================== */
+/* ====== SOCIAL ICONS ====== */
+/* ========================== */
 .social-icons {
   display: flex;
   gap: 16px;
+  justify-content: center;
   margin-top: 8px;
 }
 
 .social-icons img {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   object-fit: cover;
 }
 
-/* Copyright längst ner centrerat */
-.footer-bottom .footer-copyright {
-  font-size: 14px;
-  letter-spacing: 0.32em;
-  margin-top: 32px;
-  text-align: center;
+/* ========================== */
+/* ========= COPYRIGHT ====== */
+/* ========================== */
+.footer-copyright {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  margin-top: 16px;
+  color: #fcefd8;
+}
+
+/* ========================== */
+/* ======= RESPONSIVE ======= */
+/* ========================== */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 32px 2rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-section h3 {
+    font-size: 20px;
+  }
+
+  .footer-section p {
+    font-size: 15px;
+  }
 }
