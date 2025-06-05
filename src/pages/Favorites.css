@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ========================== */
+/* ====== FAVORITES VIEW ==== */
+/* ========================== */
+.favorites-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========================== */
+/* ========= TITEL ========== */
+/* ========================== */
+.favorites-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* ========================== */
+/* ======= TOM LISTA ======== */
+/* ========================== */
+.favorites-empty {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* ========================== */
+/* ==== HORISONTELL SCROLL == */
+/* ========================== */
+.favorites-horizontal-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+}
+
+.favorites-horizontal-scroll > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* Scrollbar styling */
+.favorites-horizontal-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.favorites-horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #d84f2a;
+  border-radius: 6px;
+}
+
+/* ========================== */
+/* ===== RESPONSIVE ========= */
+/* ========================== */
+@media (max-width: 600px) {
+  .favorites-horizontal-scroll {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}

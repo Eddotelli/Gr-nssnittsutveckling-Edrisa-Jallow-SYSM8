@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ============================= */
+/* ====== Container & Layout ==== */
+/* ============================= */
+.thankyou-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+}
+
+.thankyou-content {
+  background-color: #fff8ed;
+  border: 2px solid #f5d6c6;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+}
+
+/* ============================= */
+/* ========== Text ============= */
+/* ============================= */
+.thankyou-title {
+  font-size: 28px;
+  color: #467066;
+  margin-bottom: 1rem;
+}
+
+.thankyou-message {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.thankyou-message::after {
+  content: "🛸";
+  display: inline-block;
+  margin-left: 8px;
+  animation: float 1.5s ease-in-out infinite;
+}
+
+/* ============================= */
+/* ========= Button ============ */
+/* ============================= */
+.back-home-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #d84f2a;
+  color: #fcefd8;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.back-home-btn:hover {
+  background-color: #bb3e1d;
+}
+
+/* ============================= */
+/* ========= Receipt =========== */
+/* ============================= */
+.receipt {
+  background-color: #fffef8;
+  border: 1px dashed #d84f2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.receipt h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #d84f2a;
+}
+
+.receipt-items {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.receipt-items li {
+  margin-bottom: 0.5rem;
+}
+
+.receipt-total {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+/* Scrollbar-styling (Chrome, Edge, Safari) */
+.receipt::-webkit-scrollbar {
+  width: 6px;
+}
+
+.receipt::-webkit-scrollbar-thumb {
+  background-color: #d84f2a;
+  border-radius: 6px;
+}
+
+.receipt::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ============================= */
+/* ======== Animation ========== */
+/* ============================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ============================= */
+/* ======== Responsivitet ====== */
+/* ============================= */
+@media (max-width: 768px) {
+  .receipt {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .thankyou-content {
+    padding: 2rem 1rem;
+  }
+
+  .thankyou-title {
+    font-size: 22px;
+  }
+
+  .thankyou-message {
+    font-size: 16px;
+  }
+
+  .back-home-btn {
+    width: 100%;
+  }
+}

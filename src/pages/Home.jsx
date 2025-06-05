@@ -1,29 +1,41 @@
-import { useEffect, useState } from "react";
+// src/pages/Home.jsx
+import { useState, useEffect } from "react";
+import Hero from "../components/Hero";
 import MenuCard from "../components/MenuCard";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import "./Home.css";
 
 export default function Home() {
-  const [menu, setMenu] = useState([]);
+  const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/menu")
       .then((res) => res.json())
-      .then((data) => setMenu(data));
+      .then((data) => setMenuItems(data))
+      .catch((err) => console.error("Could not retrieve menu data:", err));
   }, []);
 
+  const popularItems = menuItems.filter((item) => item.popular === true);
+
   return (
-    <>
-      <Header />
-      <main>
-        <h1>Popular Items</h1>
+    <main className="home-container">
+      {/* Hero section at the top */}
+      <Hero />
+
+      {/* Section title */}
+      <h1 className="section-title" id="popular">
+        Popular Items
+      </h1>
+
+      {/* Popular items */}
+      {popularItems.length > 0 ? (
         <div className="menu-grid">
-          {menu.map((item) => (
+          {popularItems.map((item) => (
             <MenuCard key={item.id} item={item} />
           ))}
         </div>
-      </main>
-      <Footer />
-    </>
+      ) : (
+        <p className="no-items">No popular items available right now.</p>
+      )}
+    </main>
   );
 }

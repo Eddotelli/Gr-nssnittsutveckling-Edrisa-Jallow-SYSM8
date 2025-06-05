@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ========================= */
+/* ===== MENU CARD BASE ==== */
+/* ========================= */
+.menu-card {
+  background-color: #fff8ed;
+  border: 2px solid #f5d6c6;
+  border-radius: 20px;
+  width: 230px;
+  font-family: "IBM Plex Mono", monospace;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem;
+}
+
+.menu-card:hover {
+  transform: scale(1.035);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #d84f2a;
+}
+
+/* ========================= */
+/* ==== IMAGE WRAPPER ====== */
+/* ========================= */
+.menu-card-image-wrapper {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.menu-card:hover .menu-card-image {
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* ===== CONTENT AREA ====== */
+/* ========================= */
+.menu-card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========================= */
+/* ===== TEXT STYLES ======= */
+/* ========================= */
+.menu-card-title {
+  font-size: 18px;
+  margin: 0.35rem 0;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-card-price {
+  font-size: 15px;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.menu-card-description {
+  font-size: 13.5px;
+  color: #444;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ========================= */
+/* ===== FAVORITE ICON ===== */
+/* ========================= */
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #d84f2a;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.favorite-icon:hover {
+  transform: scale(1.25);
+}
+
+/* ========================= */
+/* ======= BUTTONS ========= */
+/* ========================= */
+.menu-card-button {
+  padding: 0.5rem 1rem;
+  background-color: #d84f2a;
+  color: #fcefd8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.menu-card-button:hover {
+  background-color: #bb3e1d;
+}
+
+.toggle-description-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #d84f2a;
+  margin-bottom: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.toggle-description-btn:hover {
+  color: #bb3e1d;
+}
+
+/* ========================= */
+/* ==== POPUP NOTIFICATION = */
+/* ========================= */
+.popup-notification {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #467066;
+  color: #fcefd8;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 2s ease-in-out;
+  z-index: 10;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* ========================= */
+/* ======= RESPONSIVE ====== */
+/* ========================= */
+@media (max-width: 500px) {
+  .menu-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .menu-card-title {
+    font-size: 16px;
+  }
+
+  .menu-card-button {
+    font-size: 13px;
+  }
+}

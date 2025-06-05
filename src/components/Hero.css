@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ============================== */
+/* ===== HERO SECTION =========== */
+/* ============================== */
+.hero-section {
+  width: 100%;
+  min-height: 550px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #fffef8;
+  position: relative;
+  padding: 2rem 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+/* ============================== */
+/* ===== OVERLAY ANIMATION ====== */
+/* ============================== */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+  color: #fcefd8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* ============================== */
+/* ===== TEXT STYLES ============ */
+/* ============================== */
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* ============================== */
+/* ===== ORDER BUTTON =========== */
+/* ============================== */
+.hero-button {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: #d84f2a;
+  color: #fffef8;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover {
+  background-color: #bb3e1d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================== */
+/* ===== ANIMATION KEYFRAMES ==== */
+/* ============================== */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================== */
+/* ===== RESPONSIVE ============= */
+/* ============================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-overlay {
+    padding: 2rem;
+  }
+
+  .hero-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

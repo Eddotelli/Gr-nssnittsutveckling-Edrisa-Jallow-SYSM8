@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+/* ========================== */
+/* ===== MENU CONTAINER ===== */
+/* ========================== */
+.category-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* ========================== */
+/* ===== CATEGORY ITEM ====== */
+/* ========================== */
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 130px;
+  padding: 14px;
+  text-align: center;
+  background-color: #fffaf3;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+  border-color: #d64a2e77;
+}
+
+.category-item.active {
+  border-color: #d64a2e;
+  background-color: #ffefe5;
+}
+
+/* ========================== */
+/* ===== ICON + LABELS ====== */
+/* ========================== */
+.category-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.category-item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+/* ========================== */
+/* ===== RESPONSIVE ========= */
+/* ========================== */
+@media (max-width: 600px) {
+  .category-menu {
+    gap: 1.2rem;
+  }
+
+  .category-item {
+    width: 90px;
+    height: 110px;
+    padding: 10px;
+  }
+
+  .category-item img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .category-item p {
+    font-size: 12px;
+  }
+}
