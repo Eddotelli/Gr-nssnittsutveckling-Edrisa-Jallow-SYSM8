@@ -74,6 +74,7 @@
   text-align: center;
 }
 
+/* Reused by nav links including the new Menu link */
 .nav-link,
 .signin-btn,
 .logout-btn {

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+/* ============================== */
+/* ========== PAGE ============== */
+/* ============================== */
+.menu-page {
+  padding: 3rem 2rem;
+  background-color: #fcefd8;
+  font-family: "IBM Plex Mono", monospace;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* ============================== */
+/* ========== TITLE ============= */
+/* ============================== */
+.menu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #467066;
+}
+
+/* ============================== */
+/* ========= GRID =============== */
+/* ============================== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* ============================== */
+/* ======= EMPTY STATE ========== */
+/* ============================== */
+.no-items {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 3rem;
+}
+
+/* ============================== */
+/* ========= RESPONSIVE ========= */
+/* ============================== */
+@media (max-width: 768px) {
+  .menu-title {
+    font-size: 2rem;
+  }
+
+  .menu-page {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 1.8rem;
+  }
+
+  .menu-page {
+    padding: 1.5rem 1rem;
+  }
+}

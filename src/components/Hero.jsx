@@ -1,4 +1,5 @@
 // src/components/Hero.jsx
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 export default function Hero() {
@@ -13,9 +14,9 @@ export default function Hero() {
         <div className="hero-text">
           <h1 className="hero-title">Drone-Delivered Delights</h1>
           <p className="hero-subtitle">Fast. Fresh. Flown to your door.</p>
-          <a href="Menu" className="hero-button">
+          <Link to="/menu" className="hero-button">
             Order Now
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ import "./Header.css";
 export default function Header() {
   const { isLoggedIn, logout, user } = useContext(AuthContext);
   const { cartItems } = useContext(CartContext);
-  const [menuOpen, setMenuOpen] = useState(false); // 🔹 Toggle menu
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
@@ -28,7 +28,7 @@ export default function Header() {
         </div>
       </Link>
 
-      {/* Hamburger icon (visible on small screens) */}
+      {/* Hamburger icon */}
       <button
         className="hamburger"
         aria-label="Toggle menu"
@@ -41,6 +41,11 @@ export default function Header() {
 
       {/* Navigation links */}
       <nav className={`header-right ${menuOpen ? "open" : ""}`}>
+        {/* 👉 New Menu button */}
+        <Link to="/menu" className="nav-link" aria-label="Go to menu">
+          Menu
+        </Link>
+
         <Link to="/cart" className="cart-icon-wrapper" aria-label="Go to cart">
           <img src="/cart.png" alt="Shopping Cart" className="cart-icon" />
           {totalQuantity > 0 && (

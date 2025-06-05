@@ -5,37 +5,36 @@
 /* ============================== */
 .hero-section {
   width: 100%;
-  height: 600px;
+  min-height: 550px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "IBM Plex Mono", monospace;
   background-color: #fffef8;
-  overflow: hidden;
+  position: relative;
+  padding: 2rem 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 /* ============================== */
-/* ===== OVERLAY ================ */
+/* ===== OVERLAY ANIMATION ====== */
 /* ============================== */
 .hero-overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ============================== */
-/* ===== TEXT CONTAINER ========= */
-/* ============================== */
-.hero-text {
-  color: #fcefd8;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 800px;
   text-align: center;
-  padding: 2rem;
-  border-radius: 16px;
-  max-width: 700px;
+  color: #fcefd8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  animation: fadeSlideIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 /* ============================== */
@@ -47,27 +46,41 @@
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
 /* ============================== */
-/* ===== BUTTON STYLE =========== */
+/* ===== ORDER BUTTON =========== */
 /* ============================== */
 .hero-button {
   display: inline-block;
-  padding: 0.8rem 1.8rem;
+  padding: 0.9rem 2rem;
   background-color: #d84f2a;
-  color: #fcefd8;
-  font-weight: bold;
-  font-size: 1rem;
+  color: #fffef8;
+  border: none;
   border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover {
   background-color: #bb3e1d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================== */
+/* ===== ANIMATION KEYFRAMES ==== */
+/* ============================== */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ============================== */
@@ -79,15 +92,15 @@
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
-  .hero-text {
-    padding: 1.5rem;
+  .hero-overlay {
+    padding: 2rem;
   }
 
   .hero-button {
-    font-size: 0.95rem;
-    padding: 0.7rem 1.5rem;
+    width: 100%;
+    font-size: 1rem;
   }
 }

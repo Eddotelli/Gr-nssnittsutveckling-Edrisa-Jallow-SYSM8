@@ -19,7 +19,6 @@ export default function ThankYou() {
   return (
     <main className="thankyou-container">
       <div className="thankyou-content">
-        {/* Thank you message */}
         <h1 className="thankyou-title">Thank you for your order!</h1>
         <p className="thankyou-message">Your food is on its way 🛸</p>
 
@@ -63,7 +62,6 @@ export default function ThankYou() {
           </div>
         )}
 
-        {/* Button to go back to home page */}
         <button className="back-home-btn" onClick={() => navigate("/")}>
           Back to Home
         </button>

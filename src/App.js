@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Favorites from "./pages/Favorites";
-import Menu from "./pages/Menu"; // ✅ New import
+import Menu from "./pages/Menu";
 import PrivateRoute from "./components/PrivateRoute";
 import "./App.css";
 
@@ -19,7 +19,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} /> {/* ✅ New route */}
+          <Route path="/menu" element={<Menu />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
@@ -40,14 +40,7 @@ function App() {
               </PrivateRoute>
             }
           />
-          <Route
-            path="/checkout"
-            element={
-              <PrivateRoute>
-                <Checkout />
-              </PrivateRoute>
-            }
-          />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/thankyou" element={<ThankYou />} />
         </Routes>
       </Layout>

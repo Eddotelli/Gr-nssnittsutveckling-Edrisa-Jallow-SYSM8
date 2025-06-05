@@ -71,13 +71,13 @@ export default function Login() {
           value={form.password}
           required
         />
-        {/* Show error message if login fails */}
+        
         {error && <p className="error">{error}</p>}
         <button type="submit" className="login-btn">
           Log in
         </button>
       </form>
-      {/* Link to signup page if user doesn't have an account */}
+
       <p className="register-prompt">
         Don’t have an account?{" "}
         <Link to="/signup" className="signup-link">

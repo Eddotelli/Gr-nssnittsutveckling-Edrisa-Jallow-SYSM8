@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
 /* ============================= */
 /* ======== Global Reset ======= */
 /* ============================= */
@@ -8,7 +10,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #fcefd8;
-  font-family: "Poppins", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 #root {
@@ -30,12 +32,15 @@ main {
 
 .section-title {
   text-align: center;
-  font-family: "Fredoka", sans-serif;
   font-size: 2rem;
   margin: 40px 0 20px;
   color: #2e5b51;
+  font-family: "IBM Plex Mono", monospace;
 }
 
+/* ============================= */
+/* ======= Menu Grid =========== */
+/* ============================= */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -46,7 +51,7 @@ main {
   padding: 0 1rem;
 }
 
-/* Anpassning för mindre skärmar */
+/* ========== RESPONSIVE ========= */
 @media (max-width: 900px) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -60,7 +65,7 @@ main {
 }
 
 /* ============================= */
-/* === Alternativa sektioner === */
+/* ===== Alternate Layouts ===== */
 /* ============================= */
 .menu-columns {
   display: flex;

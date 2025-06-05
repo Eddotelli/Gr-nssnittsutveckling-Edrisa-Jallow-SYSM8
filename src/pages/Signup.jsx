@@ -31,13 +31,11 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if passwords match
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match");
       return;
     }
 
-    // Check password length
     if (formData.password.length < 6) {
       alert("Password must be at least 6 characters long");
       return;
@@ -96,7 +94,6 @@ export default function Signup() {
         alert("Failed to register user");
       }
     } catch (err) {
-      // Handle network or server errors
       console.error("Signup error:", err);
       alert("Something went wrong. Please try again.");
     }
@@ -105,7 +102,6 @@ export default function Signup() {
   return (
     <main className="signup-container">
       <h1 className="signup-title">Create Account</h1>
-      {/* User avatar image */}
       <img
         src="/profile-avatar.png"
         alt="User icon"

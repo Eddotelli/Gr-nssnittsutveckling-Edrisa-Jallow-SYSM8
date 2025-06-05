@@ -6,7 +6,7 @@
       "price": 95,
       "category": "Burgers",
       "popular": true,
-      "image": "burger.png",
+      "image": "/assets/burgers/Läckert-dubbel-cheeseburgare-på-träbord.png",
       "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce."
     },
     {
@@ -15,7 +15,7 @@
       "price": 87,
       "category": "Burgers",
       "popular": true,
-      "image": "burger.png",
+      "image": "/assets/burgers/dubbel-bacon-cheeseburgare-på-träbord.png",
       "description": "Our signature burger delivered fast with cheddar and fresh veggies."
     },
     {
@@ -24,7 +24,7 @@
       "price": 83,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Dubbelostburgare-med-krispig-brödskorpa.png",
       "description": "Classic burger with lettuce, tomato, and our special house sauce."
     },
     {
@@ -33,7 +33,7 @@
       "price": 105,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Saftig-dubbelburgare-med-smält-ost.png",
       "description": "Two juicy patties with melted cheese, perfect for big appetites."
     },
     {
@@ -42,7 +42,7 @@
       "price": 99,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Läckert-dubbelt-cheeseburgare-med-pretzelbröd.png",
       "description": "Tender beef, cheese, and crisp lettuce served on a toasted bun."
     },
     {
@@ -51,7 +51,7 @@
       "price": 92,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Läcker-dubbel-cheeseburger-på-träbord.png",
       "description": "Double patty burger with perfectly melted cheese."
     },
     {
@@ -60,7 +60,7 @@
       "price": 89,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Krispig-kycklingsmörgås-på-pretzelbröd.png",
       "description": "Crispy chicken sandwich served on a soft pretzel bun."
     },
     {
@@ -69,7 +69,7 @@
       "price": 97,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Gourmet-Cheeseburgare-med-Pretzelbröd.png",
       "description": "Gourmet burger with truffle sauce and sautéed mushrooms."
     },
     {
@@ -78,7 +78,7 @@
       "price": 85,
       "category": "Burgers",
       "popular": false,
-      "image": "burger.png",
+      "image": "/assets/burgers/Gourmet-Cheeseburgare-med-Pretzelbröd.png",
       "description": "Double cheese burger with a crunchy crust bun."
     },
     {
@@ -87,7 +87,7 @@
       "price": 70,
       "category": "Poké Bowl",
       "popular": true,
-      "image": "poké.png",
+      "image": "/assets/poke/Poké-bowl-med-ananas-och-tofu.png",
       "description": "Fresh salmon and mango on a bed of sushi rice, garnished with sesame and seaweed."
     },
     {
@@ -96,7 +96,7 @@
       "price": 72,
       "category": "Poké Bowl",
       "popular": true,
-      "image": "poké.png",
+      "image": "/assets/poke/Poké-Bowl-med-Tonfisk-och-Avokado.png",
       "description": "Avocado, tuna, and edamame mixed with a light soy dressing over rice."
     },
     {
@@ -105,7 +105,7 @@
       "price": 75,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Poke-bowl-med-kryddig-tonfisk.png",
       "description": "Umami-rich marinated tofu, mushrooms, and seaweed salad with brown rice."
     },
     {
@@ -114,7 +114,7 @@
       "price": 72,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Poke-bowl-med-tofu-och-svamp.png",
       "description": "Classic mix of tuna, cucumber, and carrot with sesame sauce on white rice."
     },
     {
@@ -123,7 +123,7 @@
       "price": 69,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Poké Bowl-med-Grillad-Kyckling-och-Ananas.png",
       "description": "Tropical flavors with pineapple, grilled chicken, and sweet chili glaze."
     },
     {
@@ -132,7 +132,7 @@
       "price": 75,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Pokéblandning-med-avokado-och-tomater.png",
       "description": "Creamy avocado slices, cherry tomatoes, and arugula on sushi rice."
     },
     {
@@ -141,7 +141,7 @@
       "price": 74,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Poké-bowl-med-kryddig-tofu.png",
       "description": "Spicy tuna and jalapeños with sriracha aioli over warm sushi rice."
     },
     {
@@ -150,7 +150,7 @@
       "price": 76,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Poke-bowl-med-tofu-och-ananas.png",
       "description": "Pineapple, tofu, and cilantro with a tropical vinaigrette."
     },
     {
@@ -159,7 +159,7 @@
       "price": 75,
       "category": "Poké Bowl",
       "popular": false,
-      "image": "poké.png",
+      "image": "/assets/poke/Poké-bowl-med-tofu-och-chili-mayo.png",
       "description": "Spicy marinated tofu, crispy onions, and creamy chili mayo."
     },
     {
@@ -168,7 +168,7 @@
       "price": 29,
       "category": "Sides",
       "popular": true,
-      "image": "sides.png",
+      "image": "/assets/sides/pommes.png",
       "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal."
     },
     {
@@ -177,7 +177,7 @@
       "price": 35,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/sötpotatisfrites.png",
       "description": "Sweet and crispy sweet potato fries that bring a twist to traditional snacking."
     },
     {
@@ -186,7 +186,7 @@
       "price": 32,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/lökringar.png",
       "description": "Crispy battered onion rings with a soft, sweet interior — a true classic."
     },
     {
@@ -195,7 +195,7 @@
       "price": 39,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/mozarella-sticks.png",
       "description": "Five gooey mozzarella sticks in a golden, crunchy breading. Dip and enjoy!"
     },
     {
@@ -204,7 +204,7 @@
       "price": 10,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/chilimayo.png",
       "description": "Spicy chili mayo that adds a fiery finish to any dish or dip."
     },
     {
@@ -213,7 +213,7 @@
       "price": 10,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/trøffeldipp.png",
       "description": "A rich and aromatic truffle-infused dip for the gourmet enthusiast."
     },
     {
@@ -222,7 +222,7 @@
       "price": 10,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/vit-aioli.png",
       "description": "Creamy garlic aioli with a bold flavor that pairs with everything."
     },
     {
@@ -231,7 +231,7 @@
       "price": 10,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/Sesamsås.png",
       "description": "A savory soy and sesame sauce perfect for Asian-inspired dishes."
     },
     {
@@ -240,7 +240,7 @@
       "price": 10,
       "category": "Sides",
       "popular": false,
-      "image": "sides.png",
+      "image": "/assets/sides/sriracha-mayo.png",
       "description": "A zesty, spicy mayo blended with iconic Sriracha chili."
     },
     {
@@ -249,7 +249,7 @@
       "price": 22,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/coca-cola.png",
       "description": "Classic or zero sugar Coca-Cola to refresh your meal."
     },
     {
@@ -258,7 +258,7 @@
       "price": 22,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/fanta-exotic.png",
       "description": "A fruity and fun soda with exotic tropical flavors."
     },
     {
@@ -267,7 +267,7 @@
       "price": 22,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/sprite.png",
       "description": "Lemon-lime soda that’s crisp, clean, and always satisfying."
     },
     {
@@ -276,7 +276,7 @@
       "price": 20,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/loka-citron.png",
       "description": "Swedish sparkling water with a fresh lemon flavor."
     },
     {
@@ -285,7 +285,7 @@
       "price": 42,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/jordgubbsmilkshake.png",
       "description": "Creamy strawberry milkshake made with real fruit and love."
     },
     {
@@ -294,7 +294,7 @@
       "price": 42,
       "category": "Drinks & Milkshakes",
       "popular": true,
-      "image": "drinks.png",
+      "image": "/assets/drinks/blåbärs-milkshake.png",
       "description": "Rich blueberry milkshake with a perfect blend of tart and sweet."
     },
     {
@@ -303,7 +303,7 @@
       "price": 42,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/chokladmilkshake.png",
       "description": "A chocolate lover’s dream — thick, creamy, and totally indulgent."
     },
     {
@@ -312,7 +312,7 @@
       "price": 39,
       "category": "Drinks & Milkshakes",
       "popular": false,
-      "image": "drinks.png",
+      "image": "/assets/drinks/vaniljshake.png",
       "description": "Classic vanilla milkshake with real vanilla bean specks for depth and warmth."
     }
   ],
@@ -470,6 +470,101 @@
         }
       ],
       "createdAt": "2025-06-01T20:04:29.935Z"
+    },
+    {
+      "id": "e2c8",
+      "userId": null,
+      "email": null,
+      "customer": {
+        "name": "Edd",
+        "street": "Malmögatan",
+        "number": "1",
+        "city": "Testna",
+        "payment": "card"
+      },
+      "items": [
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "burger.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2025-06-03T18:48:17.141Z"
+    },
+    {
+      "id": "e076",
+      "userId": "c030",
+      "email": "user@test.se",
+      "customer": {
+        "name": "Mango",
+        "street": "Mangogatan",
+        "number": "1",
+        "city": "Mango",
+        "payment": "swish"
+      },
+      "items": [
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "/assets/burgers/Läckert-dubbel-cheeseburgare-på-träbord.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "title": "Crispy Fries",
+          "price": 29,
+          "category": "Sides",
+          "popular": true,
+          "image": "/assets/sides/pommes.png",
+          "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal.",
+          "quantity": 1
+        },
+        {
+          "id": "33",
+          "title": "Blueberry Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": true,
+          "image": "/assets/drinks/blåbärs-milkshake.png",
+          "description": "Rich blueberry milkshake with a perfect blend of tart and sweet.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2025-06-05T20:58:46.964Z"
+    },
+    {
+      "id": "b392",
+      "userId": "c030",
+      "email": "user@test.se",
+      "customer": {
+        "name": "Hans kor",
+        "street": "Hanskorgatan",
+        "number": "1",
+        "city": "Malmö",
+        "payment": "swish"
+      },
+      "items": [
+        {
+          "id": "19",
+          "title": "Crispy Fries",
+          "price": 29,
+          "category": "Sides",
+          "popular": true,
+          "image": "/assets/sides/pommes.png",
+          "description": "Golden crispy fries, seasoned to perfection for the ideal sidekick to any meal.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2025-06-05T21:13:10.511Z"
     }
   ],
   "users": [
@@ -484,5 +579,11 @@
       "number": "1"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "id": "b4b4",
+      "userId": "c030",
+      "productId": "30"
+    }
+  ]
 }

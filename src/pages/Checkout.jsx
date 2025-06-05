@@ -5,14 +5,11 @@ import { useNavigate } from "react-router-dom";
 import "./Checkout.css";
 
 export default function Checkout() {
-  // Get cart items and clearCart function from CartContext
   const { cartItems, clearCart } = useContext(CartContext);
-  // Get current user from AuthContext
   const { user } = useContext(AuthContext);
-  // Hook for navigation
   const navigate = useNavigate();
 
-  // State for form data (customer info and payment method)
+  // Customer input form state
   const [formData, setFormData] = useState({
     name: "",
     street: "",
@@ -21,32 +18,25 @@ export default function Checkout() {
     payment: "swish",
   });
 
-  // Handle changes in form fields
+  // Update form field state on change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission (place order)
+  // Handle order submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // If user is not logged in, show alert and stop
-    if (!user) {
-      alert("You must be logged in to place an order.");
-      return;
-    }
-
-    // Create order object to send to backend
+    // Build order data
     const order = {
-      userId: user.id,
+      userId: user?.id || null,
+      email: user?.email || null,
       customer: formData,
-      email: user.email,
       items: cartItems,
       createdAt: new Date(),
     };
 
     try {
-      // Send order to backend (json-server)
       const res = await fetch("http://localhost:3001/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -54,7 +44,6 @@ export default function Checkout() {
       });
 
       if (res.ok) {
-        // Save last order in localStorage, clear cart, and go to thank you page
         localStorage.setItem("lastOrder", JSON.stringify(order));
         clearCart();
         navigate("/thankyou");
@@ -62,13 +51,12 @@ export default function Checkout() {
         alert("Failed to place order. Please try again.");
       }
     } catch (error) {
-      // Handle network or server errors
       console.error("Order error:", error);
       alert("Something went wrong. Please try again later.");
     }
   };
 
-  // Calculate total price for all items in the cart
+  // Calculate total order price
   const totalPrice = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
@@ -79,7 +67,7 @@ export default function Checkout() {
       <h1>Checkout</h1>
 
       <div className="checkout-content">
-        {/* Order form */}
+        {/* Checkout form */}
         <form onSubmit={handleSubmit} className="checkout-form">
           <input
             name="name"
@@ -109,7 +97,8 @@ export default function Checkout() {
             onChange={handleChange}
             required
           />
-          {/* Payment method radio buttons */}
+
+          {/* Payment method */}
           <div className="payment-options">
             <label>
               <input
@@ -136,11 +125,10 @@ export default function Checkout() {
           <button type="submit">Confirm Order</button>
         </form>
 
-        {/* Order summary */}
+        {/* Cart summary */}
         <div className="checkout-summary">
           <h2>Your Order</h2>
           <div className="checkout-item-list">
-            {/* List each item in the cart */}
             {cartItems.map((item, index) => (
               <div className="checkout-item" key={index}>
                 <img src={item.image} alt={item.title} />
@@ -153,7 +141,6 @@ export default function Checkout() {
               </div>
             ))}
           </div>
-          {/* Show total price */}
           <p className="checkout-total">Total: {totalPrice} kr</p>
         </div>
       </div>

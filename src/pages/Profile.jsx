@@ -41,7 +41,6 @@ export default function Profile() {
 
   return (
     <main className="profile-container">
-      {/* Profile header with logout button */}
       <div className="profile-header">
         <h1>Your Profile</h1>
         <button onClick={handleLogout} className="logout-btn">
@@ -60,9 +59,6 @@ export default function Profile() {
             <div className="order-details">
               <p>
                 <strong>Name:</strong> {order.customer.name}
-              </p>
-              <p>
-                <strong>Email:</strong> {order.customer.email}
               </p>
               <p>
                 <strong>Ordered:</strong>{" "}
