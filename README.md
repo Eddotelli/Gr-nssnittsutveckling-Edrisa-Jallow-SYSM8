@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+Hur valde jag att strukturera upp mitt projekt
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Jag ville först och främst göra det simpelt för mig själv genom att lägga upp en plan som jag utgår från start till slut. Det fanns även en tydlig mall i inlämningsuppgiften av våran lärare som man kunde följa och det gjorde jag i större del. Jag började med att skapa min design i Figma – där skapade jag en userflow mellan olika sidor och komponenter. Mitt mål var att gå för ett VG som då krävde att man skapade en mobilanpassad Figma-design.
 
-## Available Scripts
+Min plan var att skapa mobilversionen i Figma efter att jag slutfört desktopversionen. Där insåg jag snabbt att min ursprungliga plan inte höll – jag ville egentligen färdigställa hela Figma-designen innan jag började koda, men tidsbristen tvingade mig att byta strategi.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+Struktur och tekniska val
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Innan jag började koda så skapade jag de nödvändiga filerna och strukturera dem i olika mappar. Strukturen som gick för var utifrån tips från läraren och det var det mest logiska också. Med hjälp av den strukturen kunde jag enkelt återanvända kod genom komponenter.
+Jag valde att köra med React – gillade att jobba i React då jag behärskade det lättast. Till kodningen så använde jag mig av en lokal db.json-fil tillsammans med JSON Server som backend-lösning. Applikationen hämtar data via fetch()-anrop till min olika endpoints (/menu, /favorites, /orders) beroende på användarens interaktion. Detta gav en tydlig överblick och snabb utvecklingsmiljö utan behov av extern databas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+Utmaningar och lösningar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+De vanligaste tekniska hinder/buggar som jag stötte på var mest när något inte synkade mellan de olika sidorna. Oftast var det att jag hade missat att uppdatera en variabel eller en funktion som var en mellanhand. Sen även css-buggar där man ändrar en klass som leder till att någon annan klass ändras också. Hur jag gick tillväga för att lösa de problemen – mycket felsökning själv genom att läsa felmeddelanden som oftast berättar om vilken rad och fil som buggade.
 
-### `npm run build`
+Felsökte jag allt för länge eller kände att jag hade ont om tid så använde jag mig av AI. Jag har dock definitivt lärt mig att felsöka smartare genom att använda mig av konsoler som skrivs ut eller ej för att kontrollera något. Ett exempel är när jag skulle kontrollera om användare förblev inloggade när jag växlade mellan de olika sidorna, där en boolean visade att man var inloggad.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Reflektion kring design och lärdomar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Momentet som tog längre tid var Figma-delen – jag har accepterat att design och css är inte en av mina starka sidor. För mycket pill och vissa stunder där jag hade en sådan beslutsångest om vad jag ska ha och inte ha som påverkade min tålamod och motivation. Tacksam för att det finns olika sidor, videos och paket som man kan ta tips samt använda sig av.
 
-### `npm run eject`
+Av detta projektet så lärde jag mig hur det är i det verkliga arbetslivet. Som min lärare nämnde, så här är det att jobba ut mot kunder. Hela processen från att skapa en design i Figma som man sedan implementerar i kod för att bygga applikationer. Fastän att jobba i Figma inte är en prioritering för mig så är jag ändå väldigt tacksam och nöjd över mig själv över att få testa på och bygga en applikationsdesign.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Framtidstankar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Detta projektet har fått mig att se var mina styrkor ligger främst och det är backend-kodning. Något jag hade gjort annorlunda hade varit att nyttja tjänster som hjälper en att bygga frontend-sidor mycket lättare och snabbare. I framtiden strävar jag efter att jobba med folk som älskar front-end, som jag kan lära mig ifrån.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Summan av kardemumman så har jag lärt mig att läsa av kod enklare och förstå syftet med det bättre. Jag har lärt mig hur man ska tänka kring UX/UI för att ge en användare den upplevelse de behöver samt kan få. Det är sånt jag kommer att lägga mer tid på kommande tid och bygga vidare på min applikation med funktioner som jag inte har hunnit implementera.
