@@ -565,6 +565,126 @@
         }
       ],
       "createdAt": "2025-06-05T21:13:10.511Z"
+    },
+    {
+      "id": "6372",
+      "userId": null,
+      "email": null,
+      "customer": {
+        "name": "Test",
+        "street": "Malmögatan",
+        "number": "1",
+        "city": "Malmö",
+        "payment": "card"
+      },
+      "items": [
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "/assets/burgers/Läckert-dubbel-cheeseburgare-på-träbord.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        },
+        {
+          "id": "33",
+          "title": "Blueberry Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": true,
+          "image": "/assets/drinks/blåbärs-milkshake.png",
+          "description": "Rich blueberry milkshake with a perfect blend of tart and sweet.",
+          "quantity": 1
+        },
+        {
+          "id": "35",
+          "title": "Vanilla Bean Milkshake",
+          "price": 39,
+          "category": "Drinks & Milkshakes",
+          "popular": false,
+          "image": "/assets/drinks/vaniljshake.png",
+          "description": "Classic vanilla milkshake with real vanilla bean specks for depth and warmth.",
+          "quantity": 1
+        },
+        {
+          "id": "34",
+          "title": "Chocolate Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": false,
+          "image": "/assets/drinks/chokladmilkshake.png",
+          "description": "A chocolate lover’s dream — thick, creamy, and totally indulgent.",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "title": "A Drone’s Special",
+          "price": 87,
+          "category": "Burgers",
+          "popular": true,
+          "image": "/assets/burgers/dubbel-bacon-cheeseburgare-på-träbord.png",
+          "description": "Our signature burger delivered fast with cheddar and fresh veggies.",
+          "quantity": 2
+        }
+      ],
+      "createdAt": "2025-09-29T13:25:22.947Z"
+    },
+    {
+      "userId": null,
+      "email": null,
+      "customer": {
+        "name": "Batman Robinsson",
+        "street": "Kalendegatan",
+        "number": "26",
+        "city": "Malmö",
+        "payment": "swish"
+      },
+      "items": [
+        {
+          "id": "29",
+          "title": "Fanta Exotic",
+          "price": 22,
+          "category": "Drinks & Milkshakes",
+          "popular": false,
+          "image": "/assets/drinks/fanta-exotic.png",
+          "description": "A fruity and fun soda with exotic tropical flavors.",
+          "quantity": 1
+        },
+        {
+          "id": "33",
+          "title": "Blueberry Milkshake",
+          "price": 42,
+          "category": "Drinks & Milkshakes",
+          "popular": true,
+          "image": "/assets/drinks/blåbärs-milkshake.png",
+          "description": "Rich blueberry milkshake with a perfect blend of tart and sweet.",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "title": "C-Town’s Finest Bacon BBQ Stack",
+          "price": 95,
+          "category": "Burgers",
+          "popular": true,
+          "image": "/assets/burgers/Läckert-dubbel-cheeseburgare-på-träbord.png",
+          "description": "A juicy stacked burger with crispy bacon and smoky BBQ sauce.",
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "title": "A Drone’s Special",
+          "price": 87,
+          "category": "Burgers",
+          "popular": true,
+          "image": "/assets/burgers/dubbel-bacon-cheeseburgare-på-träbord.png",
+          "description": "Our signature burger delivered fast with cheddar and fresh veggies.",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2026-06-24T12:52:42.168Z",
+      "id": "m3V-r6RF7_M"
     }
   ],
   "users": [
@@ -585,5 +705,6 @@
       "userId": "c030",
       "productId": "30"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
